@@ -21,11 +21,12 @@ const Modal = () => {
 
             window.location.reload();
 
-        } catch (error) {
-            setError('Oops, incorrect login credentials.')
+            setError('');
+        } catch (err) {
+            setError('Oops, incorrect login credentials.');
 
         }
-    }
+    };
 
     return (
         <div className="wrapper">
